@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "nombre": "Ensalada César",
+        "porciones": 2,
+        "descripcion": "Clásica ensalada fresca con pollo, crutones y aderezo César, ideal como almuerzo ligero.",
+        "ingredientes": [
+            {
+                "nombre": "lechuga romana",
+                "cantidad": "1",
+                "unidad": "unidad"
+            },
+            {
+                "nombre": "pechuga de pollo",
+                "cantidad": "200",
+                "unidad": "gramos"
+            },
+            {
+                "nombre": "queso parmesano",
+                "cantidad": "50",
+                "unidad": "gramos"
+            },
+            {
+                "nombre": "crutones",
+                "cantidad": "1",
+                "unidad": "taza"
+            }
+        ],
+        "pasos": [
+            "Lavar y trocear la lechuga.",
+            "Cocinar el pollo a la plancha y cortarlo en tiras.",
+            "Mezclar lechuga, pollo, crutones y parmesano.",
+            "Agregar el aderezo César y servir."
+        ],
+        "tiempo_minutos": 15,
+        "dificultad": "fácil",
+        "tipo": "almuerzo",
+        "etiquetas": [
+            "rápido",
+            "saludable",
+            "ensalada"
+        ],
+        "imagen": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/srh_recipes/755f697272cbcdc6e5df2adb44b1b705.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Tostadas Francesas",
+        "porciones": 2,
+        "descripcion": "Desayuno dulce y rápido con pan bañado en mezcla de huevo y leche, dorado a la perfección.",
+        "ingredientes": [
+            {
+                "nombre": "pan tajado",
+                "cantidad": "4",
+                "unidad": "rebanadas"
+            },
+            {
+                "nombre": "huevo",
+                "cantidad": "2",
+                "unidad": "unidades"
+            },
+            {
+                "nombre": "leche",
+                "cantidad": "100",
+                "unidad": "ml"
+            }
+        ],
+        "pasos": [
+            "Batir huevos con leche y canela.",
+            "Sumergir el pan en la mezcla.",
+            "Cocinar en una sartén con mantequilla hasta dorar.",
+            "Servir con miel o frutas si se desea."
+        ],
+        "tiempo_minutos": 10,
+        "dificultad": "fácil",
+        "tipo": "desayuno",
+        "etiquetas": [
+            "dulce",
+            "rápido",
+            "económico"
+        ],
+        "imagen": "https://cdn.elcocinerocasero.com/imagen/receta/1200/2023-02-24-20-41-28/tostadas-francesas.jpeg"
+    },
+    {
+        "id": 3,
+        "nombre": "Pasta con Tomate y Albahaca",
+        "porciones": 2,
+        "descripcion": "Plato vegetariano y rápido con sabores italianos frescos, perfecto para una comida ligera.",
+        "ingredientes": [
+            {
+                "nombre": "pasta",
+                "cantidad": "200",
+                "unidad": "gramos"
+            },
+            {
+                "nombre": "tomates",
+                "cantidad": "3",
+                "unidad": "unidades"
+            },
+            {
+                "nombre": "ajo",
+                "cantidad": "2",
+                "unidad": "dientes"
+            },
+            {
+                "nombre": "aceite de oliva",
+                "cantidad": "2",
+                "unidad": "cucharadas"
+            },
+            {
+                "nombre": "albahaca fresca",
+                "cantidad": "1",
+                "unidad": "puñado"
+            }
+        ],
+        "pasos": [
+            "Hervir la pasta según las instrucciones.",
+            "Saltear ajo y tomate en aceite de oliva.",
+            "Agregar la albahaca y mezclar con la pasta cocida.",
+            "Servir caliente."
+        ],
+        "tiempo_minutos": 20,
+        "dificultad": "media",
+        "tipo": "almuerzo",
+        "etiquetas": [
+            "vegetariano",
+            "rápido",
+            "italiano"
+        ],
+        "imagen": "https://d36fw6y2wq3bat.cloudfront.net/recipes/espaguetis-con-tomate-y-albahaca/900/espaguetis-con-tomate-y-albahaca.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Sopa de Verduras",
+        "porciones": 4,
+        "descripcion": "Sopa ligera y nutritiva con vegetales variados, ideal para una cena reconfortante.",
+        "ingredientes": [
+            {
+                "nombre": "zanahoria",
+                "cantidad": "2",
+                "unidad": "unidades"
+            },
+            {
+                "nombre": "papa",
+                "cantidad": "1",
+                "unidad": "unidad"
+            },
+            {
+                "nombre": "apio",
+                "cantidad": "2",
+                "unidad": "ramas"
+            },
+            {
+                "nombre": "agua",
+                "cantidad": "1",
+                "unidad": "litro"
+            },
+            {
+                "nombre": "sal",
+                "cantidad": "al gusto",
+                "unidad": ""
+            }
+        ],
+        "pasos": [
+            "Pelar y cortar las verduras.",
+            "Hervir el agua y agregar las verduras.",
+            "Cocinar por 30 minutos o hasta que estén blandas.",
+            "Agregar sal al gusto y servir caliente."
+        ],
+        "tiempo_minutos": 35,
+        "dificultad": "fácil",
+        "tipo": "cena",
+        "etiquetas": [
+            "ligero",
+            "vegetariano",
+            "económico"
+        ],
+        "imagen": "https://www.biotona.be/wp-content/uploads/liver-cleansing-phyto-detox-soup-9_2343c13453aca0a8e8a77fb3e0e75f42_2000.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Arroz con Pollo",
+        "porciones": 4,
+        "descripcion": "Receta tradicional de arroz sazonado con pollo y vegetales, ideal para una comida familiar completa.",
+        "ingredientes": [
+            {
+                "nombre": "arroz",
+                "cantidad": "1",
+                "unidad": "taza"
+            },
+            {
+                "nombre": "pollo en trozos",
+                "cantidad": "500",
+                "unidad": "gramos"
+            },
+            {
+                "nombre": "cebolla",
+                "cantidad": "1",
+                "unidad": "unidad"
+            },
+            {
+                "nombre": "pimentón",
+                "cantidad": "1",
+                "unidad": "unidad"
+            }
+        ],
+        "pasos": [
+            "Sofreír la cebolla y el pimentón picados.",
+            "Agregar el pollo y dorar.",
+            "Añadir el arroz y mezclar bien.",
+            "Agregar el agua, tapar y cocinar a fuego bajo hasta que se absorba."
+        ],
+        "tiempo_minutos": 40,
+        "dificultad": "media",
+        "tipo": "almuerzo",
+        "etiquetas": [
+            "tradicional",
+            "completo",
+            "latino"
+        ],
+        "imagen": "https://www.paulinacocina.net/wp-content/uploads/2015/02/arroz-con-pollo-troceado-1736933708-1000x1000.jpg"
+    }
+]

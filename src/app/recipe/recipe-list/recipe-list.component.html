@@ -1,35 +1,31 @@
-<div>
-  <div>
-    @if (selected) {
-    <div *ngIf="selected">
-      <app-recipe-detail [recipe]="selectedRecipe"></app-recipe-detail>
+<div style="align-items: center; margin: 40px 300px;">
+  <div class="main">
+    <div class="recipe-card" *ngFor="let r of recipes">
+      <img
+        [src]="r.imagen"
+        alt="{{ r.imagen }}"
+      />
+      <div class="info">
+        <h2 style="margin:0;">
+          {{r.nombre}}
+        </h2>
+        <p *ngFor="let i of r.ingredientes">
+          •   {{i.nombre}}
+        </p>
+        <h3>
+          Porciones: {{ r.porciones }}
+        </h3>
+        <h3>
+          # Ingredientes: {{ getCantidadingredientes(r) }}
+        </h3>
+        <button class="ver-btn" [routerLink]="['/recipe',r.id]">
+          Ver la receta
+        </button>
+      </div>
+      
     </div>
-    }
-    <table>
-      <thead>
-        <tr>
-          <th>Receta</th>
-          <th>Imagen</th>
-          <th>Porciones</th>
-          <th>Tiempo</th>
-        </tr>
-      </thead>
-      <tbody>
-        @for(recipe of recipes; track recipe.id){
-        <tr (click)="onSelect(recipe)">
-          <td>{{ recipe.nombre }}</td>
-          <td>
-            <img
-              class="recipe-img"
-              [src]="recipe.imagen"
-              alt="{{ recipe.imagen }}"
-            />
-          </td>
-          <td>{{ recipe.porciones }}</td>
-          <td>{{ recipe.tiempo_minutos }} min</td>
-        </tr>
-        }
-      </tbody>
-    </table>
-  </div>
-</div>
+
+
+
+
+    

@@ -1,23 +1,34 @@
-<div class="recipe-detail">
-  <h2>{{ recipe.nombre }}</h2>
-  <img
-    class="recipe-detail-img"
-    [src]="recipe.imagen"
-    alt="{{ recipe.imagen }}"
-  />
-  <p><strong>Porciones:</strong> {{ recipe.porciones }}</p>
-  <p><strong>Tiempo:</strong> {{ recipe.tiempo_minutos }} min</p>
-  <h3>Ingredientes</h3>
-  <app-ingredient-list
-    [ingredients]="recipe.ingredientes"
-  ></app-ingredient-list>
-
-  <h3>Pasos</h3>
-  <ol>
-    @for(step of recipe.pasos; track step){
-    <li>
-      {{ step }}
-    </li>
-    }
-  </ol>
+<div class="main">
+  <div class="recipe-card"> 
+    <div class="colu" style="grid-column: 1;">
+      <h2 style="font-size: 48px;">
+        {{recipe.nombre}}
+      </h2>
+      <img [src]="recipe.imagen"/>
+      <button class="ver-btn" [routerLink]="['']">
+        Regresar
+      </button>
+    </div>
+    <div class="colu" style="grid-column: 2;">
+      <div class="info">
+        <div><h3>Porciones: </h3>{{recipe.porciones}}</div>
+        <div><h3>Porciones: </h3>{{recipe.tiempo_minutos}} min</div>
+        <div><h3>Dificultad: </h3> {{recipe.dificultad}}</div>
+        <div><h3>Tipo: </h3> {{recipe.tipo}}</div>
+      </div>
+      <h2>
+        Ingredientes:
+      </h2>
+      <div><h3>Ingrediente más usado: </h3>{{getMayorCantidad()}}</div>
+      <p *ngFor="let i of recipe.ingredientes">
+          • {{i.nombre}}  -  {{i.cantidad}} {{i.unidad}}
+      </p>
+      <h2>
+        Pasos:
+      </h2>
+      <p *ngFor="let p of recipe.pasos; let num = index">
+          {{num + 1}}. num {{p}}
+      </p>
+    </div>
+  </div>
 </div>
