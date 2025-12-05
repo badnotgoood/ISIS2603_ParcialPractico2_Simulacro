@@ -39,11 +39,6 @@ export class RecipeListComponent implements OnInit {
 
   filtrarRecetas() {
     let text = this.filtro.toLowerCase().trim();
-
-    if (text === "") {
-      this.recipes = this.recipesNoFiltro; 
-    return;
-    }
   
     this.recipes = this.recipesNoFiltro.filter(receta =>
       receta.ingredientes.some(ingrediente =>
