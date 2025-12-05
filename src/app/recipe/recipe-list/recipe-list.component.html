@@ -1,23 +1,25 @@
 <div style="align-items: center; margin: 40px 300px;">
+  <div class="buscador">
+    <input placeholder="Buscar recetas por ingredientes"
+    [(ngModel)]="filtro" (input)="filtrarRecetas()"
+    />
+    <h2 *ngIf="filtro != ''">
+      Mostrando recetas con: 
+      <span style="text-decoration: underline;">{{filtro}}</span>
+    </h2>
+  </div>
   <div class="main">
     <div class="recipe-card" *ngFor="let r of recipes">
-      <img
+      <div class="photo">
+        <img
         [src]="r.imagen"
         alt="{{ r.imagen }}"
       />
+      </div>
       <div class="info">
         <h2 style="margin:0;">
           {{r.nombre}}
         </h2>
-        <p *ngFor="let i of r.ingredientes">
-          •   {{i.nombre}}
-        </p>
-        <h3>
-          Porciones: {{ r.porciones }}
-        </h3>
-        <h3>
-          # Ingredientes: {{ getCantidadingredientes(r) }}
-        </h3>
         <button class="ver-btn" [routerLink]="['/recipe',r.id]">
           Ver la receta
         </button>

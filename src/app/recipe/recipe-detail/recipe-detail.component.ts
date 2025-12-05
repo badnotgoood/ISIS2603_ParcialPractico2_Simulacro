@@ -42,4 +42,8 @@ export class RecipeDetailComponent implements OnInit {
     return ing;
   }
 
+  getCantidadingredientes() : number {
+    return this.recipe.ingredientes.length;
+  }
+
 }

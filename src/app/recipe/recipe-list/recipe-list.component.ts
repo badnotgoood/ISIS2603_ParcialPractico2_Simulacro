@@ -13,6 +13,10 @@ export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [];
   selected: Boolean = false;
   selectedRecipe: Recipe | null = null;
+  
+  filtro: string = "";
+  recipesNoFiltro: Recipe[] = [];
+
 
   constructor(private recipeService: RecipeService) {}
 
@@ -27,10 +31,24 @@ export class RecipeListComponent implements OnInit {
 
   getRecipes() : void {
     this.recipeService.getRecipes()
-      .subscribe(recipes => {this.recipes = recipes});
+      .subscribe(recipes => {
+        this.recipes = recipes;
+        this.recipesNoFiltro = recipes;
+      });
   }
 
-  getCantidadingredientes(r: Recipe) : number {
-    return r.ingredientes.length;
+  filtrarRecetas() {
+    let text = this.filtro.toLowerCase().trim();
+
+    if (text === "") {
+      this.recipes = this.recipesNoFiltro; 
+    return;
+    }
+  
+    this.recipes = this.recipesNoFiltro.filter(receta =>
+      receta.ingredientes.some(ingrediente =>
+      ingrediente.nombre.toLowerCase().includes(text))
+    );
   }
+
 }

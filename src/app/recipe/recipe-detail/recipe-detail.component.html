@@ -19,10 +19,12 @@
       <h2>
         Ingredientes:
       </h2>
-      <div><h3>Ingrediente más usado: </h3>{{getMayorCantidad()}}</div>
       <p *ngFor="let i of recipe.ingredientes">
           • {{i.nombre}}  -  {{i.cantidad}} {{i.unidad}}
       </p>
+      <div><h3>Más usado: </h3><div style="padding-top: 10px;">{{getMayorCantidad()}}</div></div>
+      <h3>Número de ingredientes: </h3>
+        {{ getCantidadingredientes() }}
       <h2>
         Pasos:
       </h2>
